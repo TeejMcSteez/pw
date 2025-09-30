@@ -6,18 +6,18 @@
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
     <title>Salon Project</title>
   </head>
-  <body>
+  <body class="bg-neutral-200 dark:bg-zinc-900 dark:text-white">
     <div id="#salonWebsite" class="flex flex-col justify-center items-center">
-      <h1 class="text-2xl text-center text-bold">Salon Website</h1>
+      <h1 class="text-2xl text-center bold m-2 p-2">Salon Website</h1>
       <div
         id="#salonWebsiteLiveDemo"
-        class="flex flex-col items-center justify-between min-h-[50vh]"
+        class="flex flex-col items-center justify-between "
       >
         <iframe
           src="https://www.maryheathermelton.com/"
           frameborder="0"
-          height="300px"
-          width="600px"
+          height="400px"
+          width="400px"
         ></iframe>
       </div>
       <p class="text-center p-2">
@@ -25,7 +25,7 @@
         show's clients a simple look into her work as well as providing a
         scheduling page from her Acuity integration.
       </p>
-      <p>
+      <p class="text-center p-2">
         I have built two version thus far, the one deployed is written and
         compiled with SvelteKit the rebult version is using Next.js. Within it
         being built she was bombarded with online booking appointments
@@ -34,7 +34,7 @@
         use and made a daily task of calling client automated and pain free.
       </p>
       <a
-        class="text-center rounded-xl p-2 m-2 bg-zinc-400 hover:invert-50 hover:scale-110"
+        class="text-center rounded-xl p-2 pr-5 pl-5 m-2 bg-zinc-400 hover:invert-50 hover:scale-110"
         href="/projects.html"
         >Back</a
       >
