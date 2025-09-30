@@ -1,12 +1,41 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
     <title>Project Page</title>
-</head>
-<body>
-    <!-- Instead of a GitHub stream as was my old website, this will be a tailored selection of projects I actually cared about or actively work on -->
-</body>
+  </head>
+  <body
+    class="min-w-screen min-h-[100vh] bg-neutral-200 dark:bg-zinc-900 dark:text-white"
+  >
+    <header
+      class="flex flex-row justify-between items-center text-center m-5 p-2"
+    >
+      <nav class="flex justify-center items-center p-2">
+        <a
+          class="bg-zinc-400 rounded-xl p-3 m-1 hover:invert-50 hover:scale-110"
+          href="/"
+          >Home</a
+        >
+      </nav>
+    </header>
+    <main class="flex flex-col justify-center items-center">
+      <a
+        class="p-2 m-2 rounded-xl bg-zinc-400 hover:invert-50 hover:scale-110"
+        href="/projects/homelab.html"
+        >Homelab</a
+      >
+      <a
+        class="p-2 m-2 rounded-xl bg-zinc-400 hover:invert-50 hover:scale-110"
+        href="/projects/salon.html"
+        >Salon Website</a
+      >
+      <a
+        class="p-2 m-2 rounded-xl bg-zinc-400 hover:invert-50 hover:scale-110"
+        href="https://github.com/TeejMcSteez/HAWebRTCFix"
+        >Home Assistant Monkeypatch</a
+      >
+    </main>
+  </body>
 </html>
