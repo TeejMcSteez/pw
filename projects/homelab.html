@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <title>Homelab Project</title>
+  </head>
+  <body class="bg-neutral-200 dark:bg-zinc-900 dark:text-white">
+    <div id="#homelab">
+      <h1 class="text-center p-2 text-2xl bold">Personal Homelab</h1>
+
+      <div class="flex flex-col justify-center items-center">
+        <h2 class="p-2 bold text-xl">Services</h2>
+
+        <ul class="m-5">
+          <li>Home Assistant</li>
+          <li>TrueNAS Scale</li>
+          <li>NGINX Reverse Proxy + Web Server</li>
+          <li>Gitea</li>
+          <li>N8N</li>
+          <li>AdGuard Home</li>
+          <li>Other Auxillary services like loggers</li>
+        </ul>
+
+        <p class="text-center m-5">
+          All of this runs on a single node Proxmox server with most of the
+          services being docker images and the ones that aren't run directly on
+          the virtual machine which are all debian besides TrueNAS Scale and
+          Home Assistant which are their own respective ISO's or images. Backups
+          happen every 24 hours at 3am synced first to an external USB-C SSD and
+          then to an internal SATA HDD with rsync and cron.
+        </p>
+
+        <h2 class="text-center text-xl bold">Server Hardware</h2>
+
+        <div id="#homelabHardwareTable" class="flex flex-col m-2 p-2">
+          <table class="text-center">
+            <thead>
+              A table for the ones that care . . .
+            </thead>
+            <tr>
+              <th>Name</th>
+              <th>Component</th>
+            </tr>
+            <tr>
+              <td>ASUS Z790-V Prime AX</td>
+              <td>Motherboard</td>
+            </tr>
+            <tr>
+              <td>Intel Core i5-12400 (6-Core/12-Thread)</td>
+              <td>CPU</td>
+            </tr>
+            <tr>
+              <td>Corsair Vengeance DDR5 6000mhz (128GB@4000mhz)</td>
+              <td>RAM</td>
+            </tr>
+            <tr>
+              <td>Samsung 990 EVO Plus (2TB)</td>
+              <td>Boot Drive</td>
+            </tr>
+            <tr>
+              <td>Hard Drive (1TB)</td>
+              <td>HDD</td>
+            </tr>
+            <tr>
+              <td>Hard Drive (2TB)</td>
+              <td>HDD</td>
+            </tr>
+            <tr>
+              <td>Corsair RM750 750 Watt 80 Plus Gold</td>
+              <td>PSU</td>
+            </tr>
+            <tr>
+              <td>Zotac RTX 3080</td>
+              <td>GPU (AI)</td>
+            </tr>
+          </table>
+        </div>
+        <a
+          class="text-center rounded-xl p-2 m-2 bg-zinc-400 hover:invert-50 hover:scale-110"
+          href="/projects.html"
+          >Back</a
+        >
+      </div>
+    </div>
+  </body>
+</html>
