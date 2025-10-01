@@ -11,4 +11,14 @@
         size-adjust: 110%;
     }
 
+    .navbtn {
+        background-color: oklch(70.5% 0.015 286.067);
+        border-radius: 10px;
+        padding: 1rem;
+        margin: .5rem;
+    }
+    .navbtn:hover {
+        background-color: oklch(45% 0.015 286.067);
+        size-adjust: 110%;
+    }
 }
