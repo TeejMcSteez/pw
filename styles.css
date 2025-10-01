@@ -1,0 +1,14 @@
+@layer components {
+    .btn {
+        padding: 1rem;
+        margin: 1rem;
+
+        border-radius: 10px;
+        background-color: oklch(70.5% 0.015 286.067);
+    }
+    .btn:hover {
+        background-color: oklch(45% 0.015 286.067);
+        size-adjust: 110%;
+    }
+
+}
