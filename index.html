@@ -14,20 +14,27 @@
         Tommy Hall
       </h1>
       <nav class="flex flex-wrap items-center justify-center">
-        <a
-          class="navbtn"
-          href="/contact.html"
-          >Contact</a
-        >
-        <a
-          class="navbtn"
-          href="projects.html"
-          >Projects</a
-        >
+        <div class="dropdown ">
+          <span class="block m-2 h-[.2rem] w-[2rem] bg-neutral-200 "></span>
+          <span class="block m-2 h-[.2rem] w-[2rem] bg-neutral-200 "></span>
+          <span class="block m-2 h-[.2rem] w-[2rem] bg-neutral-200 "></span>
+          <div class="dropdownContent">
+            <a
+              class="navbtn"
+              href="/contact.html"
+              >Contact</a
+            >
+            <a
+              class="navbtn"
+              href="projects.html"
+              >Projects</a
+            >
+          </div>
+        </div>
       </nav>
     </header>
     <div class="h-1 min-w-screen dark:bg-white bg-black"></div>
-    <main class="flex items-center justify-center min-h-[75vh]">
+    <main class="flex items-center justify-center min-h-[50vh]">
       <div
         class="flex flex-col justify-center items-center text-center p-5 rounded-xl bg-zinc-300"
       >
@@ -38,7 +45,7 @@
       </div>
     </main>
     <footer
-      class="flex flex-col justify-end items-center text-center min-h-[25vh]"
+      class="flex flex-col justify-end items-center text-center min-h-[50vh]"
     >
       <div id="icons" class="flex flex-row">
         <a class="hover:invert mr-2" target="_blank" href="/contact.html"

@@ -27,6 +27,23 @@
         background-color: oklch(45% 0.015 286.067);
         transform: scale(1.1);
     }
+
+    .dropdown {
+        position: relative;
+    }
+
+    .dropdownContent {
+      display: none;
+      position: absolute;
+      right: 0;
+    }
+
+    .dropdown:hover .dropdownContent {
+      display: flex;
+      flex-direction: column;
+
+    }
+
     .contactbtn {
         text-align: center;
         background-color: oklch(70.5% 0.015 286.067);
