@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="icon" type="image/x-icon" href="./icons/favicon.png">
     <link rel="stylesheet" href="styles.css">
     <title>Tommy Hall's Website</title>
   </head>
@@ -11,14 +12,14 @@
 
     <header class="flex flex-row justify-between m-5 p-2">
       <h1 class="flex items-center md:text-4xl text-2xl bold dark:invert">
-        Tommy Hall
+        Tommy Hall &#8546
       </h1>
       <nav class="flex flex-wrap items-center justify-center">
-        <div class="dropdown ">
+        <div class="dropdown">
           <span class="block m-2 h-[.2rem] w-[2rem] bg-neutral-200 "></span>
           <span class="block m-2 h-[.2rem] w-[2rem] bg-neutral-200 "></span>
           <span class="block m-2 h-[.2rem] w-[2rem] bg-neutral-200 "></span>
-          <div class="dropdownContent">
+          <div class="dropdownContent bg-neutral-200 rounded-xl p-2">
             <a
               class="navbtn"
               href="/contact.html"
@@ -33,8 +34,11 @@
         </div>
       </nav>
     </header>
+    <!-- Basic bar responsive to background settings -->
     <div class="h-1 min-w-screen dark:bg-white bg-black"></div>
+
     <main class="flex items-center justify-center min-h-[50vh]">
+
       <div
         class="flex flex-col justify-center items-center text-center p-5 rounded-xl bg-zinc-300"
       >
@@ -43,7 +47,9 @@
           or Projects!
         </p>
       </div>
+
     </main>
+
     <footer
       class="flex flex-col justify-end items-center text-center min-h-[50vh]"
     >
