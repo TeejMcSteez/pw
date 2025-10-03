@@ -43,7 +43,7 @@
         text-align: center;
         background-color: oklch(70.5% 0.015 286.067);
         border-radius: 10px;
-        width: 12vh;
+        min-width: 20vh;
         padding: 1rem;
         margin: .5rem;
         margin-left: 1rem;
