@@ -3,8 +3,8 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
     <link rel="icon" type="image/x-icon" href="./icons/favicon.png">
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
     <link rel="stylesheet" href="styles.css">
     <title>Tommy Hall's Website</title>
   </head>
@@ -14,12 +14,14 @@
       <h1 class="flex items-center md:text-4xl text-2xl bold dark:invert">
         Tommy Hall &#8546
       </h1>
-      <nav class="flex flex-wrap items-center justify-center">
-        <div class="dropdown">
-          <span class="block m-2 h-[.2rem] w-[2rem] bg-neutral-200 "></span>
-          <span class="block m-2 h-[.2rem] w-[2rem] bg-neutral-200 "></span>
-          <span class="block m-2 h-[.2rem] w-[2rem] bg-neutral-200 "></span>
-          <div class="dropdownContent bg-neutral-200 rounded-xl p-2">
+      <nav class="flex flex-row items-center justify-center">
+        <div class="dropdown" href="javascript:void(0);" onclick="toggleMenu()">
+          
+          <span id="bar1" class="block m-2 h-[.2rem] w-[2rem] bg-neutral-200 "></span>
+          <span id="bar2" class="block m-2 h-[.2rem] w-[2rem] bg-neutral-200 "></span>
+          <span id="bar3" class="block m-2 h-[.2rem] w-[2rem] bg-neutral-200 "></span>
+          
+          <div id="dropdownContent" class="dropdownContent bg-neutral-200 rounded-xl p-2">
             <a
               class="navbtn"
               href="/contact.html"
@@ -84,5 +86,7 @@
         >
       </p>
     </footer>
+
+    <script src="main.js"></script>
   </body>
 </html>

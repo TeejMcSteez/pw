@@ -35,13 +35,8 @@
     .dropdownContent {
       display: none;
       position: absolute;
+      margin: 1rem;
       right: 0;
-    }
-
-    .dropdown:hover .dropdownContent {
-      display: flex;
-      flex-direction: column;
-
     }
 
     .contactbtn {
