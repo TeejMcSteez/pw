@@ -17,9 +17,11 @@
       <nav class="flex flex-row items-center justify-center">
         <div class="dropdown" href="javascript:void(0);" onclick="toggleMenu()">
           
-          <span id="bar1" class="block m-2 h-[.2rem] w-[2rem] bg-neutral-800 dark:bg-neutral-200"></span>
-          <span id="bar2" class="block m-2 h-[.2rem] w-[2rem] bg-neutral-800 dark:bg-neutral-200"></span>
-          <span id="bar3" class="block m-2 h-[.2rem] w-[2rem] bg-neutral-800 dark:bg-neutral-200"></span>
+          <div class="">
+            <span id="bar1" class="block m-2 h-[.2rem] w-[2rem] bg-neutral-800 dark:bg-neutral-200"></span>
+            <span id="bar2" class="block m-2 h-[.2rem] w-[2rem] bg-neutral-800 dark:bg-neutral-200"></span>
+            <span id="bar3" class="block m-2 h-[.2rem] w-[2rem] bg-neutral-800 dark:bg-neutral-200"></span>
+          </div>
           
           <div id="dropdownContent" class="dropdownContent dark:bg-neutral-200 bg-neutral-800 dark:bg-neutral-200 rounded-xl p-2">
             <a
@@ -39,14 +41,22 @@
     <!-- Basic bar responsive to background settings -->
     <div class="h-1 min-w-screen dark:bg-white bg-black"></div>
 
-    <main class="flex items-center justify-center min-h-[50vh]">
+    <main class="flex flex-col items-center justify-center min-h-[50vh]">
 
       <div
-        class="flex flex-col justify-center items-center text-center p-5 rounded-xl bg-zinc-300"
+        class="flex flex-col justify-center items-center text-center p-5 m-2 rounded-xl bg-zinc-300"
       >
         <p>
-          Hello, I am currently a Student at UNCC.<br />Check Out My Contact Page
-          or Projects!
+          Hello, I am currently a Student at UNCC.<br />Check out some of my <a href="/projects.html" class="font-bold hover:invert-100">projects</a> and tell me what I could do better!
+        </p>
+      </div>
+
+      <div
+        class="flex flex-col text-center p-5 m-2 rounded-xl bg-zinc-300"
+      >
+        <p>
+          This website is simple as I enjoy thing's simply working.<br>However, any issues or improvement's
+          that could be made please contact me with any given method on this site.
         </p>
       </div>
 
@@ -56,7 +66,7 @@
       class="flex flex-col justify-end items-center text-center min-h-[50vh]"
     >
       <div id="icons" class="flex flex-row">
-        <a class="hover:invert mr-2" target="_blank" href="/contact.html"
+        <a class="hover:invert mr-2" target="_blank" href="mailto:teejmcsteez+website@gmail.com"
           ><img
             src="icons/contact.svg"
             alt="contactButton"
