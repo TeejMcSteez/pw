@@ -1,55 +1,54 @@
 @layer components {
+  .baseline {
+    min-height: 100vh;
+    min-width: 100vw;
+  }
 
-    .baseline {
-        min-height: 100vh;
-        min-width: 100vw;
-    }
+  .btn {
+    padding: 1rem;
+    margin: 1rem;
 
-    .btn {
-        padding: 1rem;
-        margin: 1rem;
+    border-radius: 10px;
+    background-color: oklch(70.5% 0.015 286.067);
+  }
+  .btn:hover {
+    background-color: oklch(45% 0.015 286.067);
+    transform: scale(1.1);
+  }
 
-        border-radius: 10px;
-        background-color: oklch(70.5% 0.015 286.067);
-    }
-    .btn:hover {
-        background-color: oklch(45% 0.015 286.067);
-        transform: scale(1.1);
-    }
+  .navbtn {
+    background-color: oklch(70.5% 0.015 286.067);
+    border-radius: 10px;
+    padding: 1rem;
+    margin: 0.5rem;
+  }
+  .navbtn:hover {
+    background-color: oklch(45% 0.015 286.067);
+    transform: scale(1.1);
+  }
 
-    .navbtn {
-        background-color: oklch(70.5% 0.015 286.067);
-        border-radius: 10px;
-        padding: 1rem;
-        margin: .5rem;
-    }
-    .navbtn:hover {
-        background-color: oklch(45% 0.015 286.067);
-        transform: scale(1.1);
-    }
+  .dropdown {
+    position: relative;
+  }
 
-    .dropdown {
-        position: relative;
-    }
+  .dropdownContent {
+    display: none;
+    position: absolute;
+    margin: 1rem;
+    right: 0;
+  }
 
-    .dropdownContent {
-      display: none;
-      position: absolute;
-      margin: 1rem;
-      right: 0;
-    }
-
-    .contactbtn {
-        text-align: center;
-        background-color: oklch(70.5% 0.015 286.067);
-        border-radius: 10px;
-        min-width: 20vh;
-        padding: 1rem;
-        margin: .5rem;
-        margin-left: 1rem;
-    }
-    .contactbtn:hover {
-        background-color: oklch(45% 0.015 286.067);
-        transform: scale(1.1);
-    }
+  .contactbtn {
+    text-align: center;
+    background-color: oklch(70.5% 0.015 286.067);
+    border-radius: 10px;
+    min-width: 20vh;
+    padding: 1rem;
+    margin: 0.5rem;
+    margin-left: 1rem;
+  }
+  .contactbtn:hover {
+    background-color: oklch(45% 0.015 286.067);
+    transform: scale(1.1);
+  }
 }
