@@ -9,12 +9,12 @@
   </head>
   <body class="bg-neutral-200 dark:bg-zinc-900 dark:text-white">
     <div id="#homelab">
-      <h1 class="text-center p-2 text-2xl bold">Personal Homelab</h1>
+      <h1 class="text-center p-2 m-4 text-2xl bold">Personal Homelab</h1>
 
       <div class="flex flex-col justify-center items-center">
         <h2 class="p-2 bold text-xl">Services</h2>
 
-        <ul class="m-5">
+        <ul class="m-5 list-disc">
           <li>Home Assistant</li>
           <li>TrueNAS Scale</li>
           <li>NGINX Reverse Proxy + Web Server</li>
@@ -24,7 +24,7 @@
           <li>Other Auxillary services like loggers</li>
         </ul>
 
-        <p class="text-left m-5">
+        <p class="text-left m-5 p-2 max-w-96 tracking-wide">
           All of this runs on a single node Proxmox server with most of the
           services being docker images and the ones that aren't run directly on
           the virtual machine which are all debian besides TrueNAS Scale and
@@ -36,41 +36,41 @@
         <h2 class="text-center text-xl bold">Server Hardware</h2>
 
         <div id="#homelabHardwareTable" class="flex flex-col m-2 p-2">
-          <table class="text-center">
+          <table class="table-auto">
             <tr>
               <th>Name</th>
               <th>Component</th>
             </tr>
             <tr>
-              <td>ASUS Z790-V Prime AX</td>
+              <td class="p-1 m-1">ASUS Z790-V Prime AX</td>
               <td>Motherboard</td>
             </tr>
             <tr>
-              <td>Intel Core i5-12400 (6-Core/12-Thread)</td>
+              <td class="p-1 m-1">Intel Core i5-12400 (6-Core/12-Thread)</td>
               <td>CPU</td>
             </tr>
             <tr>
-              <td>Corsair Vengeance DDR5 6000mhz (128GB@4000mhz)</td>
+              <td class="p-1 m-1">Corsair Vengeance DDR5 6000mhz (128GB@4000mhz)</td>
               <td>RAM</td>
             </tr>
             <tr>
-              <td>Samsung 990 EVO Plus (2TB)</td>
+              <td class="p-1 m-1">Samsung 990 EVO Plus (2TB)</td>
               <td>Boot Drive</td>
             </tr>
             <tr>
-              <td>Hard Drive (1TB)</td>
+              <td class="p-1 m-1">Hard Drive (1TB)</td>
               <td>HDD</td>
             </tr>
             <tr>
-              <td>Hard Drive (2TB)</td>
+              <td class="p-1 m-1">Hard Drive (2TB)</td>
               <td>HDD</td>
             </tr>
             <tr>
-              <td>Corsair RM750 750 Watt 80 Plus Gold</td>
+              <td class="p-1 m-1">Corsair RM750 750 Watt 80 Plus Gold</td>
               <td>PSU</td>
             </tr>
             <tr>
-              <td>Zotac RTX 3080</td>
+              <td class="p-1 m-1">Zotac RTX 3080</td>
               <td>GPU (AI)</td>
             </tr>
           </table>

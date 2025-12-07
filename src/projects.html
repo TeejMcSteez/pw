@@ -8,21 +8,18 @@
     <title>Project Page</title>
   </head>
   <body class="baseline bg-neutral-200 dark:bg-zinc-900">
-    <main class="flex flex-col justify-center items-center m-5 p-5">
-      <h1
-        class="text-2xl p-2 bg-neutral-200 dark:bg-gray-500 rounded"
-      >
-        Noteworthy Projects
-      </h1>
+    <main class="grid sm:grid-cols-2 grid-cols-3 justify-center items-center m-5 p-5">
       <a class="btn" href="projects/homelab.html">Homelab</a>
       <a class="btn" href="projects/salon.html">Salon Website</a>
       <a
-        class="btn"
+        class="btn flex flex-row"
         href="https://github.com/TeejMcSteez/HAWebRTCFix"
         target="_blank"
-        >Home Assistant Ring Component Monkeypatch</a
+        >WebRTC Monkeypatch (GitHub)</a
       >
-      <a class="btn" href="index.html">Back</a>
     </main>
+    <div class="flex items-center justify-center">
+      <a class="btn flex m-10 p-4 " href="index.html">Back</a>
+    </div>
   </body>
 </html>
