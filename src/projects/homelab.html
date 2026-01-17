@@ -8,74 +8,113 @@
     <title>Homelab Project</title>
   </head>
   <body class="bg-neutral-200 dark:bg-zinc-900 dark:text-white">
-    <div id="#homelab">
-      <h1 class="text-center p-2 m-4 text-2xl bold">Personal Homelab</h1>
+    <div class="max-w-3xl mx-auto px-4 py-8">
+      <div id="#homelab">
+      <h1 class="text-center mt-4 p-2 m-4 text-2xl font-bold">Personal Homelab</h1>
 
       <div class="flex flex-col justify-center items-center">
-        <h2 class="p-2 bold text-xl">Services</h2>
+        <h2 class="p-2 font-bold text-xl mt-8">Services</h2>
 
-        <ul class="m-5 list-disc">
-          <li>Home Assistant</li>
-          <li>TrueNAS Scale</li>
-          <li>NGINX Reverse Proxy + Web Server</li>
-          <li>Gitea</li>
-          <li>N8N</li>
-          <li>AdGuard Home</li>
-          <li>Other Auxillary services like loggers</li>
+        <ul class="m-5 list-disc list-inside space-y-2">
+          <li><a class="text-blue-500 hover:underline dark:text-blue-300" target="_blank" href="https://www.home-assistant.io/">Home Assistant</a></li>
+          <li><a class="text-blue-500 hover:underline dark:text-blue-300" target="_blank" href="https://www.truenas.com/truenas-community-edition/">TrueNAS Scale</a></li>
+          <li><a class="text-blue-500 hover:underline dark:text-blue-300" target="_blank" href="https://nginx.org/">NGINX Reverse Proxy + Web Server</a></li>
+          <li><a class="text-blue-500 hover:underline dark:text-blue-300" target="_blank" href="https://n8n.io/">N8N</a></li>
+          <li><a class="text-blue-500 hover:underline dark:text-blue-300" target="_blank" href="https://github.com/AdguardTeam/AdGuardHome">AdGuard Home</a></li>
+          <li><a class="text-blue-500 hover:underline dark:text-blue-300" target="_blank" href="https://frigate.video/">Frigate</a></li>
+          <li><a class="text-blue-500 hover:underline dark:text-blue-300" target="_blank" href="https://jellyfin.org/">Jellyfin</a></li>
+          <li><a class="text-blue-500 hover:underline dark:text-blue-300" target="_blank" href="https://github.com/TeejMcSteez/goUp">GoUp</a></li>
         </ul>
 
-        <p class="text-left m-5 p-2 max-w-96 tracking-wide">
-          All of this runs on a single node Proxmox server with most of the
-          services being docker images and the ones that aren't run directly on
-          the virtual machine which are all debian besides TrueNAS Scale and
-          Home Assistant which are their own respective ISO's or images. Backups
-          happen every 24 hours at 3am synced first to an external USB-C SSD and
-          then to an internal SATA HDD with rsync and cron.
+        <p class="text-left m-5 p-2 max-w-xl tracking-wide">
+          All of this runs on a single node Proxmox server with most of the services being docker images running on a Debian VM or directly on Debian host
+          <br>
+          Services that are images themselves like Truenas Scale and Home Assistant OS are mounted directly to a Proxmox VM disk
+          <br>
+          Backups happen everynight to an offsite (grandpa's house) server which runs Proxmox Backup Server connected via Tailscale controlled with my Headscale control plane
+          <br>
+          Their is an issue such that if Headscale is not up and running I cannot access the server but for security reasons I am okay with this
         </p>
 
-        <h2 class="text-center text-xl bold">Server Hardware</h2>
+        <h2 class="text-center text-xl font-bold mt-8">Server Hardware</h2>
 
         <div id="#homelabHardwareTable" class="flex flex-col m-2 p-2">
-          <table class="table-auto">
-            <tr>
-              <th>Name</th>
-              <th>Component</th>
+          <table class="table-auto w-full border-collapse">
+            <thead>
+              <tr>
+                <th class="border p-2 text-left">Name</th>
+                <th class="border p-2 text-left">Component</th>
+              </tr>
+            </thead>
+            <tbody>
+            <tr class="even:bg-neutral-100 dark:even:bg-zinc-800">
+              <td class="border p-2">ASUS Z790-V Prime AX</td>
+              <td class="border p-2">Motherboard</td>
             </tr>
-            <tr>
-              <td class="p-1 m-1">ASUS Z790-V Prime AX</td>
-              <td>Motherboard</td>
+            <tr class="odd:bg-neutral-200 even:bg-neutral-100 dark:odd:bg-zinc-900 dark:even:bg-zinc-800">
+              <td class="border p-2">Intel Core i5-12400 (6-Core/12-Thread)</td>
+              <td class="border p-2">CPU</td>
             </tr>
-            <tr>
-              <td class="p-1 m-1">Intel Core i5-12400 (6-Core/12-Thread)</td>
-              <td>CPU</td>
+            <tr class="even:bg-neutral-100 dark:even:bg-zinc-800">
+              <td class="border p-2">Corsair Vengeance DDR5 6000mhz (128GB@4000mhz)</td>
+              <td class="border p-2">RAM</td>
             </tr>
-            <tr>
-              <td class="p-1 m-1">Corsair Vengeance DDR5 6000mhz (128GB@4000mhz)</td>
-              <td>RAM</td>
+            <tr class="odd:bg-neutral-200 even:bg-neutral-100 dark:odd:bg-zinc-900 dark:even:bg-zinc-800">
+              <td class="border p-2">Samsung 990 EVO Plus (2TB)</td>
+              <td class="border p-2">Boot Drive</td>
             </tr>
-            <tr>
-              <td class="p-1 m-1">Samsung 990 EVO Plus (2TB)</td>
-              <td>Boot Drive</td>
+            <tr class="odd:bg-neutral-200 even:bg-neutral-100 dark:odd:bg-zinc-900 dark:even:bg-zinc-800">
+              <td class="border p-2">Hard Drive (2TB)</td>
+              <td class="border p-2">HDD</td>
             </tr>
-            <tr>
-              <td class="p-1 m-1">Hard Drive (1TB)</td>
-              <td>HDD</td>
+            <tr class="even:bg-neutral-100 dark:even:bg-zinc-800">
+              <td class="border p-2">Corsair RM750 750 Watt 80 Plus Gold</td>
+              <td class="border p-2">PSU</td>
             </tr>
-            <tr>
-              <td class="p-1 m-1">Hard Drive (2TB)</td>
-              <td>HDD</td>
+            <tr class="odd:bg-neutral-200 even:bg-neutral-100 dark:odd:bg-zinc-900 dark:even:bg-zinc-800">
+              <td class="border p-2">Zotac RTX 3080</td>
+              <td class="border p-2">GPU (AI)</td>
             </tr>
-            <tr>
-              <td class="p-1 m-1">Corsair RM750 750 Watt 80 Plus Gold</td>
-              <td>PSU</td>
-            </tr>
-            <tr>
-              <td class="p-1 m-1">Zotac RTX 3080</td>
-              <td>GPU (AI)</td>
-            </tr>
+            </tbody>
           </table>
         </div>
-        <a class="btn" href="../projects.html">Back</a>
+
+        <h2 class="text-center text-xl font-bold mt-8">Backup Server Hardware</h2>
+        <div id="#homelabHardwareTable" class="flex flex-col m-2 p-2">
+          <table class="table-auto w-full border-collapse">
+            <thead>
+              <tr>
+                <th class="border p-2 text-left">Name</th>
+                <th class="border p-2 text-left">Component</th>
+              </tr>
+            </thead>
+            <tbody>
+            <tr class="even:bg-neutral-100 dark:even:bg-zinc-800">
+              <td class="border p-2">ASUS Prime B365M-A</td>
+              <td class="border p-2">Motherboard</td>
+            </tr>
+            <tr class="odd:bg-neutral-200 even:bg-neutral-100 dark:odd:bg-zinc-900 dark:even:bg-zinc-800">
+              <td class="border p-2">Intel 7400</td>
+              <td class="border p-2">CPU</td>
+            </tr>
+            <tr class="even:bg-neutral-100 dark:even:bg-zinc-800">
+              <td class="border p-2">Corasir Vengeance LPX</td>
+              <td class="border p-2">RAM</td>
+            </tr>
+            <tr class="odd:bg-neutral-200 even:bg-neutral-100 dark:odd:bg-zinc-900 dark:even:bg-zinc-800">
+              <td class="border p-2">WD Black 1TB NVME M.2 SSD</td>
+              <td class="border p-2">Boot Drive</td>
+            </tr>
+            <tr class="even:bg-neutral-100 dark:even:bg-zinc-800">
+              <td class="border p-2">Seagate 3.5" 5400RPM 8TB HDD</td>
+              <td class="border p-2">Mass Storage</td>
+            </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <a class="inline-block bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded transition duration-300 ease-in-out mt-8 mb-4" href="../projects.html">Back</a>
+      </div>
       </div>
     </div>
   </body>
