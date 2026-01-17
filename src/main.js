@@ -25,3 +25,15 @@ function toggleMenu() {
     bar3.style.translate = "0px -22px";
   }
 }
+
+function hoverRevealName() {
+  let tag = document.getElementById("name")
+  const remove = () => {
+    tag.innerHTML = "Tommy Hall"
+  }
+  tag.addEventListener("mouseover", () => {
+    tag.innerHTML = "TeejMcSteez";
+    setTimeout(remove, 3000);
+  });
+
+}
