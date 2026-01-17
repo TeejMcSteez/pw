@@ -7,32 +7,34 @@
     <link rel="stylesheet" href="output.css">
     <title>Tommy Hall's Website</title>
   </head>
-  <body class="baseline dark:bg-zinc-900 bg-neutral-200">
-
+  <body class="baseline flex min-h-screen flex-col bg-neutral-200 dark:bg-zinc-900">
     <header class="flex flex-row justify-between m-5 p-2">
-      <h1 class="flex items-center md:text-4xl text-2xl bold dark:invert">
-        Tommy Hall &#8546
+      <h1 id="name" class="flex items-center md:text-4xl text-2xl bold dark:invert" onmouseover="hoverRevealName()">
+        Tommy Hall
       </h1>
       <nav class="flex flex-row items-center justify-center">
         <div class="dropdown" href="javascript:void(0);" onclick="toggleMenu()">
-          
           <div class="">
-            <span id="bar1" class="block m-2 h-[.2rem] w-[2rem] bg-neutral-800 dark:bg-neutral-200"></span>
-            <span id="bar2" class="block m-2 h-[.2rem] w-[2rem] bg-neutral-800 dark:bg-neutral-200"></span>
-            <span id="bar3" class="block m-2 h-[.2rem] w-[2rem] bg-neutral-800 dark:bg-neutral-200"></span>
+            <span
+              id="bar1"
+              class="block m-2 h-[.2rem] w-[2rem] bg-neutral-800 dark:bg-neutral-200"
+            ></span>
+            <span
+              id="bar2"
+              class="block m-2 h-[.2rem] w-[2rem] bg-neutral-800 dark:bg-neutral-200"
+            ></span>
+            <span
+              id="bar3"
+              class="block m-2 h-[.2rem] w-[2rem] bg-neutral-800 dark:bg-neutral-200"
+            ></span>
           </div>
-          
-          <div id="dropdownContent" class="dropdownContent dark:bg-neutral-200 bg-neutral-800 dark:bg-neutral-200 rounded-xl p-2">
-            <a
-              class="navbtn"
-              href="contact.html"
-              >Contact</a
-            >
-            <a
-              class="navbtn"
-              href="projects.html"
-              >Projects</a
-            >
+
+          <div
+            id="dropdownContent"
+            class="dropdownContent dark:bg-neutral-200 bg-neutral-800 dark:bg-neutral-200 rounded-xl p-2"
+          >
+            <a class="navbtn" href="contact.html">Contact</a>
+            <a class="navbtn" href="projects.html">Projects</a>
           </div>
         </div>
       </nav>
@@ -40,32 +42,36 @@
     <!-- Basic bar responsive to background settings -->
     <div class="h-1 min-w-screen dark:bg-red-800 bg-black"></div>
 
-    <main class="flex flex-col items-center justify-center min-h-[50vh]">
-
+    <main class="flex flex-grow flex-col items-center justify-center gap-4 p-4 dark:text-white">
       <div
-        class="flex flex-col justify-center items-center text-center p-5 m-2 rounded-xl bg-zinc-300"
+        class="flex flex-col justify-center items-center text-center p-5 rounded-xl bg-white dark:bg-zinc-800"
       >
         <p>
-          Hello, I am currently a Student at UNCC.<br />Check out some of my <a href="projects.html" class="font-bold hover:invert-100">projects</a> and tell me what I could do better!
+          Hello, I am currently a Student at UNCC.<br />Check out some of my
+          <a href="projects.html" class="font-bold hover:invert-100"
+            >projects</a
+          >
+          and tell me what I could do better!
         </p>
       </div>
 
       <div
-        class="flex flex-col text-center p-5 m-2 rounded-xl bg-zinc-300"
+        class="flex flex-col text-center p-5 rounded-xl bg-white dark:bg-zinc-800"
       >
         <p>
-          This website is simple as I enjoy thing's simply working.<br>However, any issues or improvement's
-          that could be made please contact me with any given method on this site.
+          This website is simple as I enjoy thing's simply working.<br />However,
+          any issues or improvement's that could be made please contact me with
+          any given method on this site.
         </p>
       </div>
-
     </main>
 
-    <footer
-      class="flex flex-col justify-end items-center text-center min-h-[50vh]"
-    >
+    <footer class="flex flex-col justify-end items-center text-center p-4">
       <div id="icons" class="flex flex-row">
-        <a class="hover:invert mr-2" target="_blank" href="mailto:teejmcsteez+website@gmail.com"
+        <a
+          class="hover:invert mr-2"
+          target="_blank"
+          href="mailto:teejmcsteez+website@gmail.com"
           ><img
             src="icons/contact.svg"
             alt="contactButton"
@@ -86,11 +92,23 @@
         /></a>
       </div>
       <p class="p-2 m-2 dark:invert">
-        Built with HTML/<a target="_blank" href="https://www.tailwindcss.com/"
+        Built with HTML/<a
+          target="_blank"
+          href="https://www.tailwindcss.com/"
+          class="hover:underline"
           >Tailwindcss</a
-        >/JS - Hosted by Me with<a target="_blank" href="https://nginx.org/">
+        >/JS - Hosted by Me with<a
+          target="_blank"
+          href="https://nginx.org/"
+          class="hover:underline"
+        >
           NGINX</a
-        > and<a target="_blank" href="https://www.cloudflare.com">
+        >
+        and<a
+          target="_blank"
+          href="https://www.cloudflare.com"
+          class="hover:underline"
+        >
           Cloudflare</a
         >
       </p>
